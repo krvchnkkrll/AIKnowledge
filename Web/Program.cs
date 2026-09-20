@@ -1,10 +1,17 @@
+using Application;
+using Assistant;
+using Opensearch;
 using Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 
-builder.AddWeb();
+builder
+    .AddApplication()
+    .AddAssistant()
+    .AddOpensearch()
+    .AddWeb();
 
 var app = builder.Build();
 

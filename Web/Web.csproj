@@ -10,4 +10,10 @@
       <Folder Include="wwwroot\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Assistant\Assistant.csproj" />
+      <ProjectReference Include="..\Opensearch\Opensearch.csproj" />
+    </ItemGroup>
+
 </Project>
